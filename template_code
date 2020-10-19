@@ -7,17 +7,19 @@ def positon_manejar(master_duge,paper_cup,x,y):
          #ホンスワン
          if paper_cup==True:{
              #position_historyの末尾の紙コップのx座標y座標
+             return position_history[]
          }else{
              #position_historyの末尾のボールのx座標y座標
+             return position_history[]
          }
      }else{
-        return position_history
+        return position_history[0]
      }
         
     }else{
         #熊谷さん
         #position_history配列の末尾にx,yを追加
-        return position_history 
+        return position_history[] 
     }
 }
 aa =  positon_manejar(True,True,0,0)
