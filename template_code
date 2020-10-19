@@ -1,26 +1,27 @@
 #ボールのx座標　ボールのy座標　紙コップx座標 紙コップy座標
-position_history =[[0.0,0.0,0.0,0.0]]
-def positon_manejar(master_duge,paper_cup,x,y):
-{
-    if master == True:{
-     if len(position_history)>=0:{
-         #ホンスワン
-         if paper_cup==True:{
-             #position_historyの末尾の紙コップのx座標y座標
-             return position_history[]
-         }else{
-             #position_historyの末尾のボールのx座標y座標
-             return position_history[]
-         }
-     }else{
-        return position_history[0]
-     }
+position_base =[[0.0,0.0,0.0,0.0]]
+def position_manager(master_judge,paper_cup,x,y):
+
+    if master == True:
+        if len(position_base)>=0:
         
-    }else{
+         #ホンスワン
+         if paper_cup==True:
+             #position_historyの末尾の紙コップのx座標y座標
+             return position_base[]
+         else:
+             #position_historyの末尾のボールのx座標y座標
+             return position_base[]
+         
+     else:
+        return position_base[0]
+     
+        
+    else:
+    
         #熊谷さん
-        #position_history配列の末尾にx,yを追加
-        return position_history[] 
-    }
-}
-aa =  positon_manejar(True,True,0,0)
+        #position_base配列の末尾にx,yを追加
+        return position_base[] 
+    
+aa =  position_manager(True,True,0,0)
 printf(aa)
